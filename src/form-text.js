@@ -4,7 +4,7 @@ import React from'react'
 export default function FormText() {
     const textPswd= React.useRef()
     const textPswd2 = React.useRef()
-    const onBlurPassword= () =>{
+    const onBlurPassword = () =>{
         let pswd = textPswd.current.value
         if (pswd!== '' && !pswd.match(/^[0-  9a  -zA-Z]+$/)) {
             textPswd.current.value= ''
